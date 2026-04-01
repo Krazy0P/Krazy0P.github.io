@@ -1,20 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Krazy</title>
     <link rel="icon" type="image/svg+xml" href="/bots.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Monofett&display=swap"
       rel="stylesheet"
     />
-    <title>Krazy</title>
-    <script type="module" crossorigin src="/assets/index-ORf5Wu3B.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Bxm2yZVf.css">
   </head>
-  <body class="bg-gray-950 text-violet-100">
-    <div id="root"></div>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      background-color: #000000;
+      font-family: "JetBrains Mono", monospace;
+      max-width: 80ch;
+    }
+    p {
+      color: #f5e0dc;
+    }
+    a {
+      color: #f5c2e7;
+      text-decoration: none;
+    }
+    .term-profile {
+      color: #eebebe;
+    }
+    .directory,
+    .command {
+      color: #b4befe;
+    }
+    .dollar {
+      color: #89b4fa;
+    }
+    .typing-command {
+      display: inline-flex;
+      width: 6ch;
+      animation: typing 1s steps(6);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .boom {
+      animation: fade 1.5s;
+    }
+    .flex {
+      display: flex;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 6ch;
+      }
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <body>
+    <span class="">
+      <span class="term-profile">krazy@potato</span>:<span class="directory"
+        >~</span
+      ><span class="dollar">$</span>
+      <span class="command typing-command">whoami</span>
+    </span>
+    <div class="boom">
+      <p>
+        I'm a student who codes for fun mostly with JavaScript.
+        Currently a bit burned out aspirant. 
+        I'll learn more after I get into some tier 1 institute.
+      </p>
+      <span>
+        <span class="term-profile">krazy@potato</span>:<span class="directory"
+          >~</span
+        ><span class="dollar">$</span>
+        <span class="command">domains --filter currently_interested</span>
+      </span>
+      <p>
+        - Recover from <br/>
+        &nbsp;&nbsp;|- burnout by exams <br/>
+        &nbsp;&nbsp;|- too burned out to continue...
+      </p>
+
+      <span>
+        <span class="term-profile">krazy@potato</span>:<span class="directory"
+          >~</span
+        ><span class="dollar">$</span>
+        <span class="command">inspiration --page</span>
+      </span>
+
+      <p>Inspired from <a href="https://bashbunni.dev" target="_blank">bashbunni.dev</a></p>
+
+      <span>
+        <span class="term-profile">krazy@potato</span>:<span class="directory"
+          >~</span
+        ><span class="dollar">$</span>
+        <span class="command">contacts</span>
+      </span>
+      <p>
+        - Email:
+        <a href="mailto:connect.backroom358@aleeas.com" target="_blank"
+          >connect.backroom358@aleeas.com</a
+        > 
+        <br />
+        - GitHub:
+        <a href="https://github.com/Krazy0P" target="_blank"
+          >github.com/Krazy0P</a
+        >
+      </p>
+    </div>
   </body>
 </html>
