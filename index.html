@@ -1,144 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Krazy</title>
-    <link rel="icon" type="image/svg+xml" href="/bots.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Monofett&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <style>
+<head>
+  <meta charset="UTF-8" />
+  <title>Krazy</title>
+  <link rel="icon" type="image/svg+xml" href="/bots.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Monofett&display=swap" rel="stylesheet" />
+</head>
+
+<style>
+  :root {
+    color-scheme: dark;
+    background-color: #000000;
+    font-family: "JetBrains Mono", monospace;
+    max-width: 80ch;
+    font-size: large;
+  }
+
+  @media (max-width: 768px) {
     :root {
-      color-scheme: dark;
-      background-color: #000000;
-      font-family: "JetBrains Mono", monospace;
-      max-width: 80ch;
-      font-size: large;
+      font-size: medium;
     }
-    p {
-      color: #f5e0dc;
-      margin-left: 1ch;
+  }
 
+  p {
+    color: #f5e0dc;
+    margin-left: 1ch;
+
+  }
+
+  a {
+    color: #f5c2e7;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .term-profile {
+    color: #eebebe;
+  }
+
+  .directory,
+  .command {
+    color: #b4befe;
+  }
+
+  .dollar {
+    color: #89b4fa;
+  }
+
+  .typing-command {
+    display: inline-flex;
+    width: 6ch;
+    animation: typing 1s steps(6);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .boom {
+    animation: fade 1.5s;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
     }
-    a {
-      color: #f5c2e7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .term-profile {
-      color: #eebebe;
-    }
-    .directory,
-    .command {
-      color: #b4befe;
-    }
-    .dollar {
-      color: #89b4fa;
-    }
-    .typing-command {
-      display: inline-flex;
+
+    100% {
       width: 6ch;
-      animation: typing 1s steps(6);
-      white-space: nowrap;
-      overflow: hidden;
     }
-    .boom {
-      animation: fade 1.5s;
-    }
-    .flex {
-      display: flex;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
     }
 
-    @keyframes typing {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 6ch;
-      }
+    75% {
+      opacity: 0;
     }
-    @keyframes fade {
-      0% {
-        opacity: 0;
-      }
-      75% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
 
-  <body>
-    <span class="">
-      <span class="term-profile">krazy@kiwi</span>:<span class="directory"
-        >~</span
-      ><span class="dollar">$</span>
-      <span class="command typing-command">whoami</span>
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<body>
+  <span class="">
+    <span class="term-profile">krazy@kiwi</span>:<span class="directory">~</span><span class="dollar">$</span>
+    <span class="command typing-command">whoami</span>
+  </span>
+  <div class="boom">
+    <p>
+      I'm a student and full-stack developer who enjoys building tools, bots, and communities.
+      Had paused programming completely in 2025 to focus on academics.
+    </p>
+    <span>
+      <span class="term-profile">krazy@kiwi</span>:<span class="directory">~</span><span class="dollar">$</span>
+      <span class="command">domains --verbose</span>
     </span>
-    <div class="boom">
-      <p>
-        I'm a student and full-stack developer who enjoys building tools, bots, and communities.
-        Had paused programming completely in 2025 to focus on academics.
-      </p>
-      <span>
-        <span class="term-profile">krazy@kiwi</span>:<span class="directory"
-          >~</span
-        ><span class="dollar">$</span>
-        <span class="command">domains --verbose</span>
-      </span>
-       <p>
-        - Interests <br/>
-        &nbsp;&nbsp;|- Open source <br/>
-        &nbsp;&nbsp;|- Community building <br />
-        &nbsp;&nbsp;|- Learning...<br />
-      </p>
+    <p>
+      - Interests <br />
+      &nbsp;&nbsp;|- Open source <br />
+      &nbsp;&nbsp;|- Community building <br />
+      &nbsp;&nbsp;|- Learning...<br />
+    </p>
 
-      <span>
-        <span class="term-profile">krazy@kiwi</span>:<span class="directory"
-          >~</span
-        ><span class="dollar">$</span>
-        <span class="command">inspiration --page</span>
-      </span>
+    <span>
+      <span class="term-profile">krazy@kiwi</span>:<span class="directory">~</span><span class="dollar">$</span>
+      <span class="command">inspiration --page</span>
+    </span>
 
-      <p>
-        Inspired from <a href="https://bashbunni.dev" target="_blank">bashbunni.dev</a> 
-        <br />
-        Sponsorsed by <a href="https://instagram.com/realshedu" target="_blank">realshedu</a>
-      </p>
+    <p>
+      Inspired from <a href="https://bashbunni.dev" target="_blank">bashbunni.dev</a>
+      <br />
+      Sponsorsed by <a href="https://instagram.com/realshedu" target="_blank">realshedu</a>
+    </p>
 
 
-      <span>
-        <span class="term-profile">krazy@kiwi</span>:<span class="directory"
-          >~</span
-        ><span class="dollar">$</span>
-        <span class="command">contacts</span>
-      </span>
-      <p>
-        - Email:
-        <a href="mailto:connect.backroom358@aleeas.com" target="_blank"
-          >connect.backroom358@aleeas.com</a
-        >
-        <br />
-        - GitHub:
-        <a href="https://github.com/Krazy0P" target="_blank"
-          >github.com/Krazy0P</a
-        >
-        <br />
-        - LeetCode:
-        <a href="https://github.com/Krazy0P" target="_blank"
-          >leetcode.com/u/Krazy0P</a
-        >
-      </p>
-    </div>
-  </body>
+    <span>
+      <span class="term-profile">krazy@kiwi</span>:<span class="directory">~</span><span class="dollar">$</span>
+      <span class="command">contacts</span>
+    </span>
+    <p>
+      - Email:
+      <a href="mailto:connect.backroom358@aleeas.com" target="_blank">connect.backroom358@aleeas.com</a>
+      <br />
+      - GitHub:
+      <a href="https://github.com/Krazy0P" target="_blank">github.com/Krazy0P</a>
+      <br />
+      - LeetCode:
+      <a href="https://github.com/Krazy0P" target="_blank">leetcode.com/u/Krazy0P</a>
+    </p>
+  </div>
+</body>
+
 </html>
